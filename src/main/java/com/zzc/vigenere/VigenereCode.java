@@ -8,6 +8,7 @@ import java.util.Collections;
 
 /**
  * Created by ying on 2016/11/18.
+ * 维吉尼亚加密算法
  */
 public class VigenereCode {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
