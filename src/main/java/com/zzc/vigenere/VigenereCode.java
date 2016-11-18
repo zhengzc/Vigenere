@@ -136,7 +136,7 @@ public class VigenereCode {
     }
 
     public static void main(String[] args){
-        VigenereCode vigenereCode = new VigenereCode("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ_1234567890");
+        VigenereCode vigenereCode = new VigenereCode("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890");
 
         String txt = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ_1234567890";
         String key = "1234567890";
