@@ -130,9 +130,7 @@ public class VigenereCode {
         }
         int[] keyInt = new int[key.length()];
         for(int i = 0 ; i < key.length() ; i++){
-//            keyInt[i] = this.charset.indexOf(key.charAt(i));
-            //稍作变更
-            keyInt[i] = (this.charset.indexOf(key.charAt(i))+i) % this.charsetSize;
+            keyInt[i] = this.charset.indexOf(key.charAt(i));
         }
         return keyInt;
     }
@@ -140,7 +138,7 @@ public class VigenereCode {
     public static void main(String[] args){
         VigenereCode vigenereCode = new VigenereCode("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ_1234567890");
 
-        String txt = "helloword88888888888888";
+        String txt = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ_1234567890";
         String key = "1234567890";
 
         String cipherText = vigenereCode.encrypt(txt,key);
